@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, ArrowUp, ArrowUpRight, Flag } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import {motion} from "framer-motion"
 import Link from "next/link";
@@ -49,7 +49,7 @@ export const Footer = () => {
                          {clicked ? <ArrowUpRight className="text-blue-400"></ArrowUpRight> : <ArrowRight className="text-blue-400"></ArrowRight>  }
                         </div>
                    </div>
-                        <h1 className="text-xs text-gray-500">Let' connnect</h1>
+                        <h1 className="text-xs text-gray-500">Let&apos; connnect</h1>
                         <h1 className="bg-gray-600 h-0.5 w-full "></h1>
 
                        

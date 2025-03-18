@@ -1,6 +1,6 @@
 "use client";
 
-import { easeInOut, motion, useAnimate, useAnimationFrame } from "framer-motion"
+import { motion, useAnimationFrame } from "framer-motion"
 import { useState } from "react";
 enum ButtonColor{
     Green="bg-green-600",

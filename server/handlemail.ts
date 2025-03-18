@@ -2,11 +2,6 @@ import z from 'zod'
 import { Sendmail } from './Sendmail';
 
 
-interface mailObjectType{
-    to: string,
-    subject: string,
-    mail: string
-}
 
 export   const  handleMail= async (to: string, subject: string, mail: string)=>{
     const  SenderMail=to;
@@ -27,7 +22,8 @@ try {
 
     return {sucess: false,msg: 'Mail could not be sent'};
      
-} catch (error) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+} catch (_error) {
     return {sucess: false, msg: 'Send again !'};
 
     

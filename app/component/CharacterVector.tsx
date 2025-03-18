@@ -36,7 +36,7 @@ export const IntroChracterVector=()=>{
         </h1> 
         <div className="flex items-start justify-end pt-8  w-2/4 pl-5 font-semibold ">
    <span className="text-lg text-white text-center ">I am a Fullstack Developer writing ,
-   <span>Code that's <span  className="text-purple-600">Functional</span>, <span className="text-yellow-600">Documented</span> <span className="text-blue-400">& Beautiful</span></span>
+   <span>Code that&apos;s <span  className="text-purple-600">Functional</span>, <span className="text-yellow-600">Documented</span> <span className="text-blue-400">& Beautiful</span></span>
     </span> 
     <MovingButton  color={'White'} heading="devOps"></MovingButton>
 

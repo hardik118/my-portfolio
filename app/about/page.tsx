@@ -76,10 +76,10 @@ export default function AboutMePage(){
   className="h-3/12  ">
   <h1 className="text-xl">My Certification Includes</h1>
   <div className="flex flex-col text-sm gap-1 mt-2 items-start justify-start">
-  <button  onClick={(e)=>handleClick('https://www.coursera.org/account/accomplishments/certificate/U6N44EQQTX5T')} className="hover:text-blue-400">Design and analysis of algorithims</button>
-  <button onClick={(e)=>handleClick('https://www.cipherschools.com/certificate/preview?id=667207b457b93ff9094e14de')} className="hover:text-purple-400">Java</button>
-   <button onClick={(e)=>handleClick('https://postimg.cc/rKcmvtbs')} className="hover:text-yellow-400">Cloud Computing</button>
-   <button onClick={(e)=>handleClick('https://coursera.org/share/eca5f484986fbe28cd941809aa008a86')} className="hover:text-pink-300">prompt Engineering </button>
+  <button  onClick={()=>handleClick('https://www.coursera.org/account/accomplishments/certificate/U6N44EQQTX5T')} className="hover:text-blue-400">Design and analysis of algorithims</button>
+  <button onClick={()=>handleClick('https://www.cipherschools.com/certificate/preview?id=667207b457b93ff9094e14de')} className="hover:text-purple-400">Java</button>
+   <button onClick={()=>handleClick('https://postimg.cc/rKcmvtbs')} className="hover:text-yellow-400">Cloud Computing</button>
+   <button onClick={()=>handleClick('https://coursera.org/share/eca5f484986fbe28cd941809aa008a86')} className="hover:text-pink-300">prompt Engineering </button>
   </div>
 
   </motion.div>

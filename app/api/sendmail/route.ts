@@ -10,7 +10,7 @@ export async function POST(req:Request) {
       return NextResponse.json(response);
 
     } catch (error) {
-        return NextResponse.json({ msg : "Internal Server Error" });
+        return NextResponse.json({ msg  : error });
 
         
     }

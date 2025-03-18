@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import { ArrowRight, Briefcase } from "lucide-react";
 import { ExperienceCard} from "./experianceCard";
 import { ConnectBtn } from "./connectBtn";

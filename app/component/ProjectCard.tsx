@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { h1 } from "framer-motion/client";
 import { useState } from "react";
 
 export const ProjectCard=({name, date, stack, desc}: {name: string, date: string, stack: string, desc: string})=>{
@@ -26,7 +25,7 @@ function getRandomColor(){
 
     return (
         <motion.div className="h-1/4 relative  border-b border-gray-600  flex items-center justify-center"
-        onHoverStart={()=>{setHovered(true),getRandomColor()}}
+        onHoverStart={()=>{setHovered(true);getRandomColor()}}
         onHoverEnd={()=>setHovered(false)}
         onMouseMove={handleMouseMove}
         whileHover={{ paddingLeft: "5rem", paddingRight: "3rem" }} 

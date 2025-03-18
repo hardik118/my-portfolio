@@ -1,6 +1,6 @@
 'use client';
 
-import { Briefcase, FolderKanban } from "lucide-react";
+import { FolderKanban } from "lucide-react";
 import { DescCard } from "../component/DescCard";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -40,6 +40,8 @@ const Experiance = [
 ];
 
 export default function ExperiencePage(){
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+
     return (
 <div>
       {/* Animated Heading */}
@@ -66,7 +68,6 @@ export default function ExperiencePage(){
       {/* Project Cards - Appear as Scrolled */}
       <div className="flex flex-col gap-11">
         {Experiance.map((project, index) => {
-          const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
           return (
             <motion.div

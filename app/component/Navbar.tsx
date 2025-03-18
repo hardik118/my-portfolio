@@ -1,12 +1,10 @@
 'use client';
 
 import { Briefcase, Folder, Home, User } from "lucide-react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 
 export const Navbar=()=>{
-    const router= useRouter();
     return <div className="h-auto w-full flex items-center justify-between  text-white text-xs p-2 pl-2 pr-2 border-b  border-gray-200">
     <div className=" w-auto  h-auto  border-gray-700 rounded-xl  border  p-2  ">
         <h1 className="text-xs ">Hardik Yadav</h1>

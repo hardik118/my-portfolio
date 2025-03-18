@@ -3,7 +3,6 @@
 
 import React, { useState } from "react"
 import { LabelInput } from "../component/labelinput"
-import { handleMail } from "@/server/handlemail";
 
 export default function ConnectWrapper(){
     const [mail, setmail]= useState('');

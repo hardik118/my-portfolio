@@ -1,4 +1,3 @@
-import Marquee from "react-fast-marquee"
 import { SkillsMarquee } from "./Techrowmoving"
 
 export const SkillBar=()=>{

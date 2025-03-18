@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Confetti from "react-confetti";
+import Image from "next/image";
 
 export const SkillsMarquee = () => {
   const skills = [
@@ -30,11 +31,11 @@ export const SkillsMarquee = () => {
             onMouseEnter={() => setConfettiIndex(index)}
             onMouseLeave={() => setConfettiIndex(null)}
           >
-            <img
-              src={src}
-              alt="Skill"
-              className="h-16 transition-transform duration-300 hover:scale-110"
-            />
+           <Image
+  src={src}
+  alt="Skill"
+  className="h-16 transition-transform duration-300 hover:scale-110"
+/>
             {confettiIndex === index && (
               <Confetti
                 numberOfPieces={200}

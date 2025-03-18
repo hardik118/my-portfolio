@@ -1,6 +1,6 @@
 import { ConnectBtn } from "./connectBtn"
 import { ProjectCard } from "./ProjectCard"
-import { ArrowRight, Briefcase } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { FolderKanban } from "lucide-react"
 import Link from "next/link"
 

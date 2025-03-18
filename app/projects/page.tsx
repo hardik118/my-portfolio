@@ -37,6 +37,8 @@ const projects = [
 ];
 
 export default function ProjectsPage() {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+
   return (
     <div>
       {/* Animated Heading */}
@@ -63,7 +65,6 @@ export default function ProjectsPage() {
       {/* Project Cards - Appear as Scrolled */}
       <div className="flex flex-col gap-11">
         {projects.map((project, index) => {
-          const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
           return (
             <motion.div

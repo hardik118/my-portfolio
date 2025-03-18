@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 export  const DescCard=({name, Experiance, date, techStack, description, link, src}: {name: string, Experiance: boolean | undefined, date: string, techStack: string, description: string[],link: string, src: string })=>{
    const handelRedirect=()=>{
     window.location.href=`${link}`
@@ -10,8 +11,13 @@ export  const DescCard=({name, Experiance, date, techStack, description, link, s
         <div className="w-full h-[60vh] border-neutral-600  rounded-lg  flex items-center justify-center ">
             <div className="w-11/12  h-full border-neutral-600 border flex flex-row gap-1 justify-between p-2 rounded-md ">
             <div className="h-full w-1/2 p-5  border border-zinc-600 rounded-md  ">
-            <img className="w-full h-full" src={`${src}`} alt="image" />
-
+            <Image 
+  src={src} 
+  alt="image" 
+  layout="fill" 
+  objectFit="cover" 
+  className="w-full h-full" 
+/>
 </div>
 <div className="h-full w-1/2 p-1 ">
 <div className="h-1/6 w-full  p-2">

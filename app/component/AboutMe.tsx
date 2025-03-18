@@ -39,7 +39,7 @@ export const AboutMe=()=>{
       </div>
         <div className="text-sm  text-gray-200  flex items-center justify-between  ">
           <div>
-            <h1>Let's Build the Future With Your Organization visions ,</h1> 
+            <h1>Let&apos;s Build the Future With Your Organization visions ,</h1> 
             <h1>And  My skills  ,</h1> 
           
             </div>
