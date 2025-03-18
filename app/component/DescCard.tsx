@@ -11,7 +11,7 @@ export  const DescCard=({name, Experiance, date, techStack, description, link, s
         <div className="w-full h-[60vh] border-neutral-600  rounded-lg  flex items-center justify-center ">
             <div className="w-11/12  h-full border-neutral-600 border flex flex-row gap-1 justify-between p-2 rounded-md ">
             <div className="h-full w-1/2 p-5 border border-zinc-600 rounded-md relative">
-  <Image 
+            <Image 
     src={src} 
     alt="image" 
     fill
