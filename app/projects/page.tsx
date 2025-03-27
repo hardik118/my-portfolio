@@ -4,6 +4,16 @@ import { useInView } from "react-intersection-observer";
 import { FolderKanban } from "lucide-react";
 import { DescCard } from "../component/DescCard";
 
+interface Project {
+  name: string;
+  Experiance?: boolean;
+  techStack: string;
+  date: string;
+  description: string[];
+  link: string;
+  imgSrc: string;
+}
+
 const projects = [
   {
     name: "StoriesNStore",
@@ -18,7 +28,7 @@ const projects = [
       "Engage in discourse, connect with people, and let people come to your store.",
     ],
     link: "https://github.com/hardik118/StoriesNStore",
-    imgSrc: "SNS.png",
+    imgSrc: "/SNS.png",
   },
   {
     name: "Fiat-to-Crypto Payment Platform",
@@ -37,8 +47,6 @@ const projects = [
 ];
 
 export default function ProjectsPage() {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
-
   return (
     <div>
       {/* Animated Heading */}
@@ -62,31 +70,36 @@ export default function ProjectsPage() {
         <div className="h-0.5 bg-gray-300 relative z-0"></div>
       </motion.div>
 
-      {/* Project Cards - Appear as Scrolled */}
+      {/* Project Cards */}
       <div className="flex flex-col gap-11">
-        {projects.map((project, index) => {
-
-          return (
-            <motion.div
-              key={index}
-              ref={ref}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-            >
-              <DescCard
-              Experiance={project.Experiance}
-                link={project.link}
-                src={project.imgSrc}
-                name={project.name}
-                date={project.date}
-                techStack={project.techStack}
-                description={project.description}
-              />
-            </motion.div>
-          );
-        })}
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} index={index} />
+        ))}
       </div>
     </div>
+  );
+}
+
+// ✅ Separate component to use useInView
+function ProjectCard({ project, index }:{project: Project, index: number}) {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, delay: index * 0.2 }}
+    >
+      <DescCard
+        Experiance={project.Experiance}
+        link={project.link}
+        src={project.imgSrc}
+        name={project.name}
+        date={project.date}
+        techStack={project.techStack}
+        description={project.description}
+      />
+    </motion.div>
   );
 }

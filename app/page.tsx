@@ -6,9 +6,15 @@ import { Projects } from "./component/projects";
 import { Experiance } from "./component/Experiance";
 import { SkillBar } from "./component/SkillBar";
 import { Footer } from "./component/footer";
+import HelloAnimation from "./component/FirstIntro";
+
+
+
+
 export default function Home() {
   return (
 <div className="">
+<HelloAnimation  />
   <Navbar></Navbar>
  <IntroChracterVector></IntroChracterVector>
  <AboutMe></AboutMe>

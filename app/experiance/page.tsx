@@ -1,14 +1,25 @@
-'use client';
+"use client";
 
 import { FolderKanban } from "lucide-react";
 import { DescCard } from "../component/DescCard";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+// Define the type for an experience entry
+interface Experience {
+  name: string;
+  Experiance: boolean;
+  techStack: string;
+  date: string;
+  description: string[];
+  link: string;
+  imgSrc: string;
+}
 
-const Experiance = [
+// Experience data
+const experienceData: Experience[] = [
   {
-    name: "lead web dev",
+    name: "Lead Web Dev",
     Experiance: true,
     techStack: "High Frequency Trading platform",
     date: "2024",
@@ -23,9 +34,9 @@ const Experiance = [
     imgSrc: "/LWD.png",
   },
   {
-    name: "Js, cpp Coder",
+    name: "JS, C++ Coder",
     Experiance: true,
-    techStack: "Outlier Ai",
+    techStack: "Outlier AI",
     date: "2023",
     description: [
       "Enables users to buy, sell, and transfer crypto using fiat (UPI, cards, bank transfers).",
@@ -39,11 +50,34 @@ const Experiance = [
   },
 ];
 
-export default function ExperiencePage(){
+// Card Component
+function ExperienceCard({ experience, index }: { experience: Experience; index: number }) {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
-    return (
-<div>
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, delay: index * 0.2 }}
+    >
+      <DescCard
+        Experiance={experience.Experiance}
+        link={experience.link}
+        src={experience.imgSrc}
+        name={experience.name}
+        date={experience.date}
+        techStack={experience.techStack}
+        description={experience.description}
+      />
+    </motion.div>
+  );
+}
+
+// Main Page Component
+export default function ExperiencePage() {
+  return (
+    <div>
       {/* Animated Heading */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -65,31 +99,12 @@ export default function ExperiencePage(){
         <div className="h-0.5 bg-gray-300 relative z-0"></div>
       </motion.div>
 
-      {/* Project Cards - Appear as Scrolled */}
+      {/* Experience Cards */}
       <div className="flex flex-col gap-11">
-        {Experiance.map((project, index) => {
-
-          return (
-            <motion.div
-              key={index}
-              ref={ref}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-            >
-              <DescCard
-                link={project.link}
-                Experiance={project.Experiance}
-                src={project.imgSrc}
-                name={project.name}
-                date={project.date}
-                techStack={project.techStack}
-                description={project.description}
-              />
-            </motion.div>
-          );
-        })}
+        {experienceData.map((experience, index) => (
+          <ExperienceCard key={index} experience={experience} index={index} />
+        ))}
       </div>
     </div>
-    )
+  );
 }
