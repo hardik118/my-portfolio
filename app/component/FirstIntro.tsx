@@ -16,27 +16,28 @@ export default function HelloAnimation() {
       const timer = setTimeout(() => setIndex((prev) => prev + 1), 200);
       return () => clearTimeout(timer);
     } else {
-      setTimeout(() => setIsExiting(true), 500); // Start exit animation
+      setTimeout(() => setIsExiting(true), 1000);
     }
   }, [index]);
 
   return (
     <motion.div
-      className="fixed inset-0 flex justify-center items-center text-4xl font-bold bg-black z-50 w-full h-full"
-      initial={{ opacity: 1, x: 0 }}
-      animate={isExiting ? { x: "100vw" } : { x: 0 }}
-      transition={{ duration: 0.8, ease: "easeInOut" }}
-      onAnimationComplete={() => {
-        if (isExiting) setIndex(-1); // Remove component after animation
-      }}
-    >
-      <motion.span
-        initial={{ opacity: 1 }}
-        animate={isExiting ? { opacity: 0 } : { opacity: 1 }}
-        transition={{ duration: 0.4 }}
-      >
-        {index >= 0 ? languages[index] : null}
-      </motion.span>
-    </motion.div>
+  className="fixed inset-0 flex justify-center items-center text-4xl font-bold bg-black text-white z-30 w-full h-full  pointer-events-none"
+  initial={{ opacity: 1, scale: 1 }}
+  animate={
+    isExiting
+      ? { opacity: 0, scale: 2.5, transition: { duration: 0.8, ease: "easeInOut" } }
+      : { opacity: 1, scale: 1 }
+  }
+>
+  <motion.span
+    initial={{ opacity: 1 }}
+    animate={isExiting ? { opacity: 0, scale: 1.5 } : { opacity: 1 }}
+    transition={{ duration: 0.6 }}
+  >
+    {languages[index]}
+  </motion.span>
+</motion.div>
+
   );
 }

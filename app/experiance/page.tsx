@@ -24,12 +24,13 @@ const experienceData: Experience[] = [
     techStack: "High Frequency Trading platform",
     date: "2024",
     description: [
-      "A place for people to write and share their stories, engage in discourse, and commerce resources beneficial for new grads and job seekers.",
-      "Write beautiful stories with our editor and share them with the world.",
-      "Create your store, upload your docs, and let the world use them by paying for them.",
-      "Safe and secure document viewers to protect your resources from infringement and copyright issues.",
-      "Engage in discourse, connect with people, and let people come to your store.",
-    ],
+      "Architected and developed a high-performance web platform for real-time trading, ensuring ultra-low latency and seamless user experience.",
+      "Led the frontend and backend development, optimizing data streaming, order execution, and live market analytics.",
+      "Integrated real-time WebSocket communication for instant trade updates and market movements.",
+      "Enhanced system reliability and scalability, reducing latency and improving execution speed.",
+      "Implemented secure authentication and risk management features to protect user assets and data integrity.",
+      "Optimized UI/UX for traders, ensuring a fast, responsive, and intuitive trading experience."
+    ],    
     link: "https://yourprojectlink.com",
     imgSrc: "/LWD.png",
   },
@@ -39,11 +40,12 @@ const experienceData: Experience[] = [
     techStack: "Outlier AI",
     date: "2023",
     description: [
-      "Enables users to buy, sell, and transfer crypto using fiat (UPI, cards, bank transfers).",
-      "Implements self-custodial wallets for better security and ownership.",
-      "Supports instant SOL-to-USDC conversion for price stability.",
-      "KYC verification required for transactions to ensure compliance.",
-      "Optimized for speed with a 5-10 minute transaction completion time.",
+      "Developed high-performance algorithms in JavaScript and C++ for AI-driven data analysis and anomaly detection.",
+      "Optimized AI models for real-time pattern recognition and predictive analytics.",
+      "Implemented efficient data structures and algorithms to enhance processing speed and scalability.",
+      "Collaborated with machine learning engineers to fine-tune AI models for anomaly detection.",
+      "Improved system efficiency by refactoring core logic and reducing execution time.",
+      "Built modular, maintainable, and scalable codebases for AI-driven applications."
     ],
     link: "https://yourprojectlink.com",
     imgSrc: "/JSCPPCODER.png",
@@ -93,7 +95,7 @@ export default function ExperiencePage() {
             transition={{ duration: 1, delay: 0.5 }}
             className="h-16 w-18 absolute right-0 -top-3 z-10"
           >
-            <FolderKanban className="h-full w-full mt-3 text-blue-400 bg-black p-2 border-gray-400 rounded-4xl" />
+            <FolderKanban className="h-full w-full mt-3 fill-current p-2 border-gray-400 rounded-4xl" />
           </motion.div>
         </div>
         <div className="h-0.5 bg-gray-300 relative z-0"></div>

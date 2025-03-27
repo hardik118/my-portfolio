@@ -64,7 +64,7 @@ export default function ProjectsPage() {
             transition={{ duration: 1, delay: 0.5 }}
             className="h-16 w-18 absolute right-0 -top-3 z-10"
           >
-            <FolderKanban className="h-full w-full mt-3 text-blue-400 bg-black p-2 border-gray-400 rounded-4xl" />
+            <FolderKanban className="h-full w-full mt-3 fill-current p-2 border-gray-400 rounded-4xl" />
           </motion.div>
         </div>
         <div className="h-0.5 bg-gray-300 relative z-0"></div>

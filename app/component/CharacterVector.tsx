@@ -17,8 +17,8 @@ export const IntroChracterVector = () => {
                         src={'/avatar.jpg'}
                         className="w-16 h-16 rounded-3xl"
                     />
-                    <button className="h-14 text-gray-500 rounded-3xl text-md flex items-end justify-center">
-                        Hyi, How are you?
+                    <button className="h-14  text-gray-200 rounded-3xl text-md flex items-end justify-center">
+                        Hy, How are you?
                     </button>
                 </h1>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl text-purple-600 font-semibold flex flex-row gap-3">
