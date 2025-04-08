@@ -37,11 +37,20 @@ export const Navbar = () => {
             </div>
 
             {/* Right Section (Hidden on Mobile) */}
-            <div className="w-auto  flex-row border border-gray-700 rounded-xl text-white text-xs p-2 gap-3 hidden md:block">
+           <div className="flex flex-row gap-2">
+           <div className="w-auto  flex-row border border-gray-700 rounded-xl text-white text-xs p-2 gap-3 hidden md:block">
                 <Link href="/Connect" prefetch={true}>
                     <button className="hover:drop-shadow-[0_0_10px_white] transition">Contact Me</button>
                 </Link>
+                
             </div>
+            <div className="w-auto  flex-row border border-gray-700 rounded-xl text-white text-xs p-2 gap-3 hidden md:block">
+                <Link href="/Resume" prefetch={true}>
+                    <button className="hover:drop-shadow-[0_0_10px_white] transition">Resume</button>
+                </Link>
+                
+            </div>
+           </div>
         </div>
     );
 };

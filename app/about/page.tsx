@@ -1,7 +1,9 @@
 'use client';
 import { motion } from "framer-motion";
 
+
 export default function AboutMePage() {
+
   const handleClick = (Address: string) => {
     window.location.href = `${Address}`;
   };
@@ -101,6 +103,7 @@ export default function AboutMePage() {
           </div>
         </div>
       </motion.div>
+
     </div>
   );
 }

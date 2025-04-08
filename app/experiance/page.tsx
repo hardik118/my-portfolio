@@ -19,9 +19,9 @@ interface Experience {
 // Experience data
 const experienceData: Experience[] = [
   {
-    name: "Lead Web Dev",
+    name: "Web Dev",
     Experiance: true,
-    techStack: "High Frequency Trading platform",
+    techStack: "Thequals",
     date: "2024",
     description: [
       "Architected and developed a high-performance web platform for real-time trading, ensuring ultra-low latency and seamless user experience.",
@@ -35,7 +35,7 @@ const experienceData: Experience[] = [
     imgSrc: "/LWD.png",
   },
   {
-    name: "JS, C++ Coder",
+    name: "FrontEnd Engineering",
     Experiance: true,
     techStack: "Outlier AI",
     date: "2023",
