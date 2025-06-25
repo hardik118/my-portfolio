@@ -18,25 +18,27 @@ export const Projects = () => {
       </div>
 
       {/* Projects List */}
-      <div className="w-full max-w-6xl flex flex-col gap-6 items-center"> {/* Centered Projects */}
+      <div className="w-full max-w-7xl flex flex-col gap-6 items-center"> {/* Centered Projects */}
+        
         <ProjectCard
-          name="StoriesNstore"
+          name="Ai interview"
+          date="2025"
+          stack="React.js, Node.js, PostgreSQL, python , AI/ML"
+          desc="Manages initil screening for corporates."
+        />
+         <ProjectCard
+          name="Wordpress Resume theme"
           date="2024"
+          stack="wordpress php,,sql, "
+          desc="Wordpress resuem builder for themes."
+        />
+         <ProjectCard
+          name="StoriesNstore"
+          date="2023"
           stack="React.js, Hono, AWS, Node.js, Cloudflare"
           desc="Share stories and commerce Docs."
         />
-        <ProjectCard
-          name="FeeatPay"
-          date="2024"
-          stack="React.js, Node.js, PostgreSQL, Solana"
-          desc="Cross-border international payments in minutes."
-        />
-        <ProjectCard
-          name="ConnectPal"
-          date="2024"
-          stack="Node.js, EJS, Tailwind"
-          desc="Group chat for all."
-        />
+        
       </div>
 
       {/* Call to Action */}

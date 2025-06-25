@@ -15,11 +15,43 @@ interface Project {
 }
 
 const projects = [
+
+  {
+  name: "VoiceHireAI",
+  Experiance: false,
+  techStack: "Next.js, Hono, PostgreSQL, OpenAI API, Tailwind, Vercel",
+  date: "2025",
+  description: [
+    "An AI-powered interview screening tool for corporate hiring that evaluates candidates through voice-based conversations.",
+    "Simulates a real interview environment with OpenAI-driven technical and behavioral questions.",
+    "Generates structured summaries and candidate performance reports for unbiased evaluations.",
+    "Supports multiple screening rounds with customizable question sets for different job roles.",
+    "Built with a privacy-first architecture and scalable backend powered by Hono and PostgreSQL.",
+  ],
+  link: "https://github.com/hardik118/AIinterview.git",
+  imgSrc: "/voiceHireAi.png",
+},
+{
+  name: "WPResumePro",
+  experience: true,
+  techStack: "WordPress, PHP, Gutenberg Blocks API, Sass, JavaScript, ACF",
+  date: "2024",
+  description: [
+    "A customizable, modern resume/CV theme for WordPress designed with minimalism and clarity in mind.",
+    "Includes multiple resume sections: Education, Experience, Skills, Portfolio, Contact & Recommendations.",
+    "Built with Gutenberg blocks for easy drag-and-drop section reordering and live editing.",
+    "Styled with Sass + Object‑oriented PHP for clean templates and easy overrides.",
+    "Fully responsive, print-ready, and exportable as PDF using WP‑Print‑styles.",
+  ],
+  link: "https://github.com/hardik118/WordpressResumeTheme",
+  imgSrc: "/wp.jpeg",
+}
+,
   {
     name: "StoriesNStore",
     Experiance: false,
     techStack: "React, Hono, Node.js, AWS, Cloudflare, Tailwind",
-    date: "2024",
+    date: "2023",
     description: [
       "A place for people to write and share their stories, engage in discourse, and commerce resources beneficial for new grads and job seekers.",
       "Write beautiful stories with our editor and share them with the world.",
@@ -30,20 +62,7 @@ const projects = [
     link: "https://github.com/hardik118/StoriesNStore",
     imgSrc: "/SNS.png",
   },
-  {
-    name: "Fiat-to-Crypto Payment Platform",
-    techStack: "Fastify, Node.js, Solana, AWS, KYC Verification, React, Tailwind",
-    date: "Ongoing (2025)",
-    description: [
-      "Enables users to buy, sell, and transfer crypto using fiat (UPI, cards, bank transfers).",
-      "Implements self-custodial wallets for better security and ownership.",
-      "Supports instant SOL-to-USDC conversion for price stability.",
-      "KYC verification required for transactions to ensure compliance.",
-      "Optimized for speed with a 5-10 minute transaction completion time.",
-    ],
-    link: "https://github.com/hardik118/Feeatpay",
-    imgSrc: "/FATPAY.png",
-  },
+  
 ];
 
 export default function ProjectsPage() {

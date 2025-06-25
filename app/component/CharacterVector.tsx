@@ -17,26 +17,26 @@ export const IntroChracterVector = () => {
                         src={'/avatar.jpg'}
                         className="w-16 h-16 rounded-3xl"
                     />
-                    <button className="h-14  text-gray-200 rounded-3xl text-md flex items-end justify-center">
+                    <button className="h-14  text-gray-200 rounded-3xl text-xl flex items-end justify-center">
                         Hy, How are you?
                     </button>
                 </h1>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl text-purple-600 font-semibold flex flex-row gap-3">
+                <h1 className="text-3xl sm:text-4xl md:text-7xl text-purple-600 font-semibold flex flex-row gap-3">
                     DESIGN 
                     <span className="text-xs sm:text-sm pb-2 text-gray-300 font-thin flex items-end justify-end">
                         ## UI/UX
                     </span>
                     <MovingButton color={'Green'} heading="Design"></MovingButton>
                 </h1>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl text-white font-semibold">DEVELOPMENT</h1>
+                <h1 className="text-3xl sm:text-4xl md:text-7xl text-white font-semibold">DEVELOPMENT</h1>
                 <h1 className="flex flex-row gap-2">
                     <MovingButton color={'Yellow'} heading="Development"></MovingButton>
                     <span className="flex items-end justify-end text-xs sm:text-sm pb-2"># Full Stack Developer</span>
-                    <span className="text-3xl sm:text-4xl md:text-5xl text-yellow-600 font-semibold">DEPLOY</span>
+                    <span className="text-3xl sm:text-4xl md:text-7xl text-yellow-600 font-semibold">DEPLOY</span>
                 </h1>
                 <h1 className="flex flex-row gap-2">
-                    <span className="text-3xl sm:text-4xl md:text-5xl text-blue-400 font-semibold">&</span>
-                    <span className="text-3xl sm:text-4xl md:text-5xl text-blue-400 font-semibold">OPTIMIZE</span>
+                    <span className="text-3xl sm:text-4xl md:text-7xl text-blue-400 font-semibold">&</span>
+                    <span className="text-3xl sm:text-4xl md:text-7xl text-blue-400 font-semibold">OPTIMIZE</span>
                     <span className="flex items-end justify-end text-xs sm:text-sm pb-2">## DevOps</span>
                     <div className="flex items-center justify-center">
                         <Link href="/Connect" prefetch={true}>

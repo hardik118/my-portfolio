@@ -19,22 +19,6 @@ interface Experience {
 // Experience data
 const experienceData: Experience[] = [
   {
-    name: "Fullstack Web Developer",
-    Experiance: true,
-    techStack: "Thequals",
-    date: "2024",
-    description: [
-      "Architected and developed a high-performance web platform for real-time trading, ensuring ultra-low latency and seamless user experience.",
-      "Led the frontend and backend development, optimizing data streaming, order execution, and live market analytics.",
-      "Integrated real-time WebSocket communication for instant trade updates and market movements.",
-      "Enhanced system reliability and scalability, reducing latency and improving execution speed.",
-      "Implemented secure authentication and risk management features to protect user assets and data integrity.",
-      "Optimized UI/UX for traders, ensuring a fast, responsive, and intuitive trading experience."
-    ],    
-    link: "https://yourprojectlink.com",
-    imgSrc: "/LWD.png",
-  },
-  {
     name: "FrontEnd Engineering",
     Experiance: true,
     techStack: "Outlier AI",

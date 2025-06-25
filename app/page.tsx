@@ -15,7 +15,7 @@ import HelloAnimation from "./component/FirstIntro";
 export default function Home() {
   return (
 <div className="">
-<HelloAnimation  />
+  <HelloAnimation></HelloAnimation>
   <Navbar></Navbar>
  <IntroChracterVector></IntroChracterVector>
  <AboutMe></AboutMe>

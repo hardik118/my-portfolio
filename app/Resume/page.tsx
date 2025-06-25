@@ -15,9 +15,9 @@ export default function Resume() {
     >
       <h1 className="text-3xl font-bold text-white">Resume</h1>
       <a
-        href="/resume.pdf"
+        href="/myresume.pdf"
         download
-        className="flex items-center gap-2 px-4 py-2 bg-blue-300 hover:bg-blue-400 text-white rounded-xl transition"
+        className="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-300 hover:text-black text-white rounded-xl transition"
       >
         <Download size={18} />
         Download Resume
@@ -25,7 +25,7 @@ export default function Resume() {
 
       <div className="bg-white rounded-xl shadow-xl overflow-hidden max-w-4xl w-full">
       <Image
-          src="/resume.jpg"
+          src="/myresume.jpg"
           alt="Resume"
           width={1200}
           height={1600}

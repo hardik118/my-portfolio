@@ -28,12 +28,13 @@ export const DescCard = ({
       <div className="w-full md:w-11/12 border border-neutral-600 flex flex-col md:flex-row gap-4 p-4 rounded-md">
         
         {/* Image Section */}
-        <div className="relative h-60 md:h-80 lg:h-[400px] w-full md:w-1/2 border border-zinc-600 rounded-md overflow-hidden">
-  <Image 
-    src={src} 
-    alt="image" 
+      <div className="relative h-60 md:h-80 lg:h-[400px] w-full md:w-1/2 border border-zinc-600 rounded-md overflow-hidden">
+  <Image
+    src={src}
+    alt="image"
     fill
-    className="object-cover rounded-md" 
+    sizes="(max-width: 768px) 100vw, 50vw"
+    className="object-cover" // ensures it fully covers
   />
 </div>
 
