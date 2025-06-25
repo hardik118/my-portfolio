@@ -19,7 +19,7 @@ interface Experience {
 // Experience data
 const experienceData: Experience[] = [
   {
-    name: "FrontEnd Engineering",
+    name: "FrontEnd Engineer",
     Experiance: true,
     techStack: "Outlier AI",
     date: "2023",
