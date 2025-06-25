@@ -29,7 +29,7 @@ const projects = [
     "Built with a privacy-first architecture and scalable backend powered by Hono and PostgreSQL.",
   ],
   link: "https://github.com/hardik118/AIinterview.git",
-  imgSrc: "/ai.png",
+  imgSrc: "/hire.png",
 },
 {
   name: "WPResumePro",
