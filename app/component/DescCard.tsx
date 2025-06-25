@@ -33,7 +33,6 @@ export const DescCard = ({
     src={src}
     alt="image"
     fill
-    sizes="(max-width: 768px) 100vw, 50vw"
     className="object-cover" // ensures it fully covers
   />
 </div>

@@ -18,7 +18,7 @@ export const Projects = () => {
       </div>
 
       {/* Projects List */}
-      <div className="w-full max-w-7xl flex flex-col gap-6 items-center"> {/* Centered Projects */}
+      <div className="w-full pl-5 pr-5 flex flex-col gap-6 items-center"> {/* Centered Projects */}
         
         <ProjectCard
           name="Ai interview"
