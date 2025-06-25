@@ -38,11 +38,11 @@ export const ExperienceCard = () => {
             transition: { type: "spring", stiffness: 200, damping: 10 },
           }}
         >
-          <h1 className="text-sm text-green-500">Lead Web Dev</h1>
-          <h1 className="text-sm text-gray-400">High Frequency Trading Platform</h1>
+          <h1 className="text-sm text-green-500">Web Developer</h1>
+          <h1 className="text-sm text-gray-400">thEquals</h1>
           <h1 className="text-xs text-gray-400">March 24 - March 25</h1>
           <h1 className="text-xs text-gray-600">
-            Led a team of 5 developers, guiding them to build an entire website from scratch.
+            Part of the core team , helped in  building and planning website  from point zero.
           </h1>
         </motion.div>
 
@@ -59,7 +59,7 @@ export const ExperienceCard = () => {
             transition: { type: "spring", stiffness: 200, damping: 10 },
           }}
         >
-          <h1 className="text-sm text-yellow-400">JS, C++ Coder</h1>
+          <h1 className="text-sm text-yellow-400">Front-end engineer </h1>
           <h1 className="text-sm text-gray-400">Outlier AI</h1>
           <h1 className="text-xs text-gray-400">Feb 23 - Jun 24</h1>
           <h1 className="text-xs text-gray-600">

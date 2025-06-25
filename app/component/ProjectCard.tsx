@@ -67,7 +67,7 @@ export const ProjectCard = ({
 
         {/* Left side (Moves inward only on large screens) */}
         <motion.div
-          className="flex flex-col pb-2 items-center justify-center"
+          className="flex flex-col pb-2 items-start justify-start"
           animate={hovered ? { x: 40 } : { x: 0 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
         >
@@ -79,7 +79,7 @@ export const ProjectCard = ({
           >
             {name}
           </motion.h1>
-          <h1 className="text-dm">{date}</h1>
+          <h1 className="text-left text-sm pt-1">{date}</h1>
         </motion.div>
 
         {/* Right side (Moves inward only on large screens) */}

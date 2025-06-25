@@ -29,7 +29,7 @@ export const Projects = () => {
          <ProjectCard
           name="Wordpress Resume theme"
           date="2024"
-          stack="wordpress php,,sql, "
+          stack="wordpress, php,sql"
           desc="Wordpress resuem builder for themes."
         />
          <ProjectCard
